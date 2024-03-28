@@ -23,6 +23,62 @@
 
 .emoji {
   display: inline-block;
+  padding: 0px 5px;
+}
+
+.wave:hover {
+  animation: wave 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.point:hover {
+  animation: point 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes point {
+  0% {
+    transform: rotate(0deg) translateX(0px);
+  }
+  25% {
+    transform: rotate(1deg) translateX(3px);
+  }
+  50% {
+    transform: rotate(-1deg) translateX(-3px);
+  }
+  75% {
+    transform: rotate(1deg) translateX(3px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0px);
+  }
 }
 
 html {
