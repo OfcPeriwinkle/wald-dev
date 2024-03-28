@@ -65,19 +65,19 @@
 
 @keyframes point {
   0% {
-    transform: rotate(0deg) translateX(0px);
+    transform: translateX(0px);
   }
   25% {
-    transform: rotate(1deg) translateX(3px);
+    transform: translateX(3px);
   }
   50% {
-    transform: rotate(-1deg) translateX(-3px);
+    transform: translateX(-3px);
   }
   75% {
-    transform: rotate(1deg) translateX(3px);
+    transform: translateX(3px);
   }
   100% {
-    transform: rotate(0deg) translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -102,13 +102,13 @@ header {
 header > h1,
 header > h2 {
   font-size: 2.5rem;
-  font-weight: 300;
   max-width: 700px;
+  font-weight: normal;
 }
 
 header > h3 {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 strong {
