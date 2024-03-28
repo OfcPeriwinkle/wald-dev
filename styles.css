@@ -103,6 +103,10 @@ b {
   font-weight: 400;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -148,7 +152,7 @@ strong {
 
 article {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 120px 100px;
   font-weight: 300;
@@ -163,7 +167,7 @@ article > h1 {
   margin-right: 70px;
 }
 
-article > section {
+article section {
   max-width: 650px;
 }
 
@@ -202,4 +206,10 @@ section a:hover::after {
   border-radius: 3px;
   opacity: 1;
   transform: translateY(-2px);
+}
+
+section.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
