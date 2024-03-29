@@ -208,35 +208,109 @@
             </div>
           </section>
         </article>
-        <!-- <article>
+        <article>
           <h1>Projects</h1>
-          <section class="project">
-            <img src="https://via.placeholder.com/400" alt="Project Image" />
-            <h2>Spotify Playlist Utilities</h2>
-            <p>
-              A collection of utilities and experiments for managing Spotify playlists. Built with
-              TypeScript, React, Next.js, and the ever-lovely Spotify REST API.
-            </p>
-          </section>
-          <section class="project">
-            <img src="https://via.placeholder.com/400" alt="Project Image" />
-            <h2>Blue Cheese's Cat Cove (B3C)</h2>
-            <p>
-              A blog for my cat, Blue Cheese, to share her thoughts on the world. Built with
-              TypeScript, React, Next.js, and a sprinkle of catnip.
-            </p>
-          </section>
-          <section class="project">
-            <img src="https://via.placeholder.com/400" alt="Project Image" />
-            <h2>AgroGuardian</h2>
-            <p>
-              An all-terrain vehicle (ATV) crash detection system and companion iOS app. Built with
-              Python, Flask, Swift, and a whole lotta cloud services.
-            </p>
-          </section>
-        </article> -->
+          <div class="projects-container">
+            <section class="project">
+              <img
+                src="https://wald.dev/images/pluc.png"
+                width="400"
+                alt="Spotify Playlist Utilities search page"
+              />
+              <div>
+                <a href="https://github.comhttps://github.com/OfcPeriwinkle/pluc-app">
+                  <h2>Spotify Playlist Utilities</h2>
+                </a>
+                <p>
+                  A collection of utilities and experiments for managing Spotify playlists. The main
+                  motivation for putting this together was a really obscure and annoying issue with
+                  the way music is hosted on Spotify. Playlists that have been edited, listened to,
+                  and otherwise enjoyed for several years may accumulate multiple versions of the
+                  same track since Spotify is unable to recognize re-uploaded tracks. You might not
+                  notice the issue until you've heard the same song three times in a row in a
+                  playlist with 750 songs, but I sure have.
+                </p>
+                <div class="tech-used">
+                  <span>TypeScript</span>
+                  <span>React</span>
+                  <span>Next.js</span>
+                  <span>MongoDB</span>
+                  <span>REST API</span>
+                </div>
+              </div>
+            </section>
+            <!-- <section class="project">
+              <img src="https://via.placeholder.com/400" alt="Project Image" />
+              <h2>Blue Cheese's Cat Cove (B3C)</h2>
+              <p>
+                A blog for my cat, Blue Cheese, to share her thoughts on the world. Built with
+                TypeScript, React, Next.js, and a sprinkle of catnip.
+              </p> -->
+            <section class="project">
+              <img src="https://wald.dev/images/agroguardian.JPG" width="400" alt="AgroGuardian test run" />
+              <div>
+                <a
+                  href="https://aghealth.ucdavis.edu/news/research-highlight-effectiveness-crash-protection-devices-decrease-injuries-and-fatalities-all"
+                >
+                  <h2>AgroGuardian</h2>
+                </a>
+                <p>
+                  An all-terrain vehicle (ATV) crash detection system and companion iOS app. One of
+                  the leading causes of death in global agribuisiness is ATV accidents. Moreover,
+                  the vast majority of these accidents are all the same type, rollovers. Our
+                  research focused on developing a crash detection device that could be mounted on
+                  an ATV and alert first-responders in the event of an accident. The project
+                  required some out-of-the-box thinking since we had to network prototypes from the
+                  middle of nowhere. Fortunately, through the mighty Iridium satellite network, we
+                  were able to send crash reports to our cloud infrastructure and alert
+                  first-responders.
+                </p>
+                <div class="tech-used">
+                  <span>Python</span>
+                  <span>Raspberry Pi</span>
+                  <span>AWS</span>
+                  <span>PostgreSQL</span>
+                  <span>Major Tom</span>
+                </div>
+              </div>
+            </section>
+            <section class="project">
+              <img src="https://wald.dev/images/discord.jpg" width="400" alt="Discord graphic" />
+              <div>
+                <a href="https://github.com/OfcPeriwinkle/configurable_discord_bot">
+                  <h2>Configurable Discord Bot</h2>
+                </a>
+                <p>
+                  A Discord bot that can be configured to perform a variety of tasks. The bot is
+                  built with Python and uses the Discord.py library. The bot is designed to be
+                  easily configurable and can be extended with custom responses and commands. The
+                  main motivation behind this project was to build CI/CD pipelines within GitHub Actions
+                  and deploy Docker containers to Google Cloud.
+                </p>
+                <div class="tech-used">
+                  <span>Python</span>
+                  <span>Discord.py</span>
+                  <span>Docker</span>
+                  <span>GitHub Actions CI/CD</span>
+                  <span>Google Cloud</span>
+                </div>
+              </div>
+          </div>
+        </article>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="copyright">
+          <h3>
+            Built by Austin Wald
+          </h3>
+          <h4>
+            Inspired by <a href="https://github.com/bchiang7">Brittany Chiang</a>
+          </h4>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/austinwald/">LinkedIn</a>
+          <a href="https://github.com/OfcPeriwinkle">GitHub</a>
+      </footer>
     </div>
   </body>
 </html>

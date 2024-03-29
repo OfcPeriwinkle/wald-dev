@@ -107,6 +107,10 @@ ul {
   list-style: none;
 }
 
+img {
+  border-radius: 0.5rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -119,7 +123,8 @@ header {
   line-height: 60px;
 }
 
-header a {
+header a,
+footer a {
   transition: 0.2s ease-in-out;
   color: #444452;
   text-decoration: none;
@@ -127,7 +132,8 @@ header a {
   padding: 2px 3px;
 }
 
-header a:hover {
+header a:hover,
+footer a:hover {
   transition: 0.2s ease-in-out;
   color: white;
   box-shadow: inset 0 -50px 0 #007bff;
@@ -233,4 +239,50 @@ div.position h3 {
 
 div.job-and-title h3 {
   margin-bottom: 25px;
+}
+
+div.projects-container p {
+  margin-bottom: 0px;
+}
+
+div.projects-container a {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+section.project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+section.project a {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+div.tech-used {
+  margin: 10px 0px;
+}
+
+div.tech-used span {
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  margin-left: 0px;
+  font-family: monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 0.25rem;
+  color: #007bff;
+  border: 1px solid #007bff;
+  background: 0 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0px 100px 120px 100px;
+  box-sizing: border-box;
 }
