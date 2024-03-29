@@ -124,16 +124,19 @@ header {
 }
 
 header a,
-footer a {
+footer a,
+section.project a {
   transition: 0.2s ease-in-out;
   color: #444452;
   text-decoration: none;
   box-shadow: inset 0 -3px 0 #007bff;
   padding: 2px 3px;
+  margin-top: 3px;
 }
 
 header a:hover,
-footer a:hover {
+footer a:hover,
+section.project a:hover {
   transition: 0.2s ease-in-out;
   color: white;
   box-shadow: inset 0 -50px 0 #007bff;
@@ -195,7 +198,7 @@ section a {
   display: inline-block;
 }
 
-section a::after {
+section p > a::after {
   position: absolute;
   top: 100%;
   left: 0;
@@ -208,7 +211,7 @@ section a::after {
   transform: translateY(-5px);
 }
 
-section a:hover::after {
+section p > a:hover::after {
   height: 2px;
   border-radius: 3px;
   opacity: 1;
@@ -256,10 +259,10 @@ section.project {
   margin-bottom: 40px;
 }
 
-section.project a {
+/* section.project a {
   display: inline-block;
   margin-bottom: 0px;
-}
+} */
 
 div.tech-used {
   margin: 10px 0px;
