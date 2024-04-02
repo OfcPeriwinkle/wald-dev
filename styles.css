@@ -331,7 +331,9 @@ section.skills {
 
 @media screen and (max-width: 550px) {
   section.skills {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
   }
 
   section.skills h2 {
