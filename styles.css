@@ -231,6 +231,27 @@ article {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1280px) {
+  article {
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  article {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  article {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  article {
+    padding: 50px 35px;
+  }
+}
+
 article > h1 {
   flex-shrink: 0;
   color: #007bff;
@@ -241,8 +262,27 @@ article > h1 {
   text-align: right;
 }
 
+@media screen and (max-width: 550px) {
+  article > h1 {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+}
+
 article section {
   max-width: 650px;
+}
+
+@media screen and (max-width: 768px) {
+  article section {
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  article section {
+    padding-left: 30px;
+  }
 }
 
 section > p {
@@ -286,6 +326,17 @@ section.skills {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  gap: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  section.skills {
+    flex-wrap: wrap;
+  }
+
+  section.skills h2 {
+    font-size: 1.25rem;
+  }
 }
 
 section.experience {
