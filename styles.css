@@ -423,10 +423,16 @@ section.project {
   margin-bottom: 40px;
 }
 
-/* section.project a {
-  display: inline-block;
-  margin-bottom: 0px;
-} */
+@media screen and (max-width: 768px) {
+  section.project img {
+    width: 250px;
+  }
+
+  section.project h2 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+}
 
 div.tech-used {
   margin: 10px 0px;
@@ -452,4 +458,30 @@ footer {
   align-items: end;
   padding: 0px 100px 120px 100px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  footer {
+    display: block;
+  }
+
+  footer h3,
+  footer h4,
+  div.socials {
+    text-align: center;
+  }
+
+  footer h4 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 50px 30px;
+  }
 }
