@@ -144,7 +144,8 @@ header {
 
 header a,
 footer a,
-section.project a {
+section.project a,
+li.newsletter > a {
   transition: 0.2s ease-in-out;
   color: #444452;
   text-decoration: none;
@@ -155,7 +156,8 @@ section.project a {
 
 header a:hover,
 footer a:hover,
-section.project a:hover {
+section.project a:hover,
+li.newsletter > a:hover {
   transition: 0.2s ease-in-out;
   color: white;
   box-shadow: inset 0 -50px 0 #007bff;
@@ -452,6 +454,11 @@ div.tech-used span {
   color: #007bff;
   border: 1px solid #007bff;
   background: 0 0;
+}
+
+li.newsletter,
+li.newsletter > a {
+  margin-bottom: 10px;
 }
 
 footer {
